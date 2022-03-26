@@ -1,5 +1,4 @@
 import { Droppable } from "react-beautiful-dnd";
-import { MdTask } from "react-icons/md";
 import { ITask } from "../model";
 import "./styles.css";
 import Task from "./Task";
