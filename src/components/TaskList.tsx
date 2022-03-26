@@ -26,7 +26,7 @@ const TaskList: React.FC<IProps> = ({
             ref={provided.innerRef}
             {...provided.droppableProps}
           >
-            <span className="tasks__heading">All Active Tasks</span>
+            <span className="tasks__heading">Active Tasks</span>
             {tasks.map((task, index) => (
               <Task
                 index={index}
