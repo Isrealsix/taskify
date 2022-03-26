@@ -46,7 +46,7 @@ const Task: React.FC<IProps> = ({ index, task, tasks, setTasks }) => {
           onSubmit={(ev) => handlerEdit(ev, task.id)}
           ref={provided.innerRef}
           {...provided.draggableProps}
-          {...provided.dragHandleProps}
+          {...provided.dragHandleProp}
         >
           {edit ? (
             <input
