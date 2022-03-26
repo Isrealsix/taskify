@@ -40,9 +40,9 @@ const Task: React.FC<IProps> = ({ index, task, tasks, setTasks }) => {
 
   return (
     <Draggable draggableId={task.id.toString()} index={index}>
-      {(provided) => (
+      {(provided, snapshot) => (
         <form
-          className="task"
+          className={`task ${snapshot.isDragging ? "drag" : "" }`}
           onSubmit={(ev) => handlerEdit(ev, task.id)}
           ref={provided.innerRef}
           {...provided.draggableProps}
